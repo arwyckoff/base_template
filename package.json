@@ -1,0 +1,39 @@
+{
+  "name": "ansley_portfolio",
+  "version": "1.0.0",
+  "description": "Ansley's Portfolio!",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack && node-sass ./app/assets/css/src -o ./app/assets/css/build && exit 0",
+    "watch": "webpack --watch & node-sass --watch ./app/assets/css/src -o ./app/assets/css/build",
+    "serve": "npm run watch & live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ansleyjones/portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "developer",
+    "javascript"
+  ],
+  "author": "Ansley M Jones",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ansleyjones/portfolio/issues"
+  },
+  "homepage": "https://github.com/ansleyjones/portfolio#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-latest": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "webpack": "^3.6.0"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}
